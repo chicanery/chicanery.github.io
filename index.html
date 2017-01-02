@@ -12,27 +12,32 @@
                 height: 100%;
                 background: rgba(14,19,25,1);
                 margin: 0;
-                
+                user-select: none;
             }
-            h1 {
+            header {
                 position: absolute;
                 top: 40%;
                 font-family: Ropa Sans;
                 color: rgba(255,255,255,0.9);
-                letter-spacing: 0.4rem;
-                font-weight: lighter;
-                font-size: 3rem;
                 display: block;
                 text-align: center;
                 width: 100%;
             }
+            header h1 {
+                letter-spacing: 0.4rem;
+                font-weight: lighter;
+                font-size: 2.8rem;
+                display: inline-block;
+                border: 0.2rem solid rgba(255,255,255,0.9);
+                padding: 2rem;
+            }
             h1 span {
-                border-bottom: 0.4rem solid rgba(255,255,255,0.6);
-                padding-bottom: 1rem;
+                border-bottom: 0.2rem solid rgba(255,255,255,0.9);
+                padding-bottom: 0.6rem;
             }
         </style>
     </head>
     <body>
-        <h1><span>chicanery.io</span></h1>
+        <header><h1><span>chicanery.io</span></h1></header>
     </body>
 </html>
