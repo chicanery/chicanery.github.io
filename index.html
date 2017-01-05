@@ -7,37 +7,51 @@
         <title>chicanery.io</title>
         <link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet">
         <style>
-            body {
-                width: 100%;
+            html {
                 height: 100%;
-                background: rgba(14,19,25,1);
+            }
+            body {
+                height: 100%;
+                background: #16222A;
+                background-image: radial-gradient(circle closest-side, rgba(255,255,255,0.05), rgba(0,0,0,0));
                 margin: 0;
                 user-select: none;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
             }
             header {
-                position: absolute;
-                top: 40%;
                 font-family: Ropa Sans;
-                color: rgba(255,255,255,0.9);
-                display: block;
-                text-align: center;
-                width: 100%;
+                color: rgba(255,255,255,0.7);
+                display: inline-block;
+                border: 0.2rem solid rgba(255,255,255,0.7);
+                padding: 2rem;
+                font-size: 1.8rem;
+                animation: fade-in 1.3s;
             }
             header h1 {
                 letter-spacing: 0.4rem;
                 font-weight: lighter;
-                font-size: 2.8rem;
                 display: inline-block;
-                border: 0.2rem solid rgba(255,255,255,0.9);
-                padding: 2rem;
-            }
-            h1 span {
-                border-bottom: 0.2rem solid rgba(255,255,255,0.9);
+                border-bottom: 0.2rem solid rgba(255,255,255,0.7);
                 padding-bottom: 0.6rem;
+                margin: 0;
+            }
+            @media only screen and (max-width: 767px) {
+                header {
+                    font-size: 1rem;
+                }
+            }
+            @keyframes fade-in {
+                from { opacity: 0; }
+                to   { opacity: 1; }
             }
         </style>
     </head>
     <body>
-        <header><h1><span>chicanery.io</span></h1></header>
+        <header>
+            <h1>chicanery.io</h1>
+        </header>
     </body>
 </html>
